@@ -1,5 +1,6 @@
-This is your new *vault*.
 
-Make a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!
 
-When you're ready, delete this note and make the vault your own.
+This is a lore vault for all the Campaign lore submitted to the lore channel on the discord.
+Contact Moonlighter or an Admin if anything is incorrect.
+
+You can start exploring the Vault by first reading about operation [[Scorpion Shadow]] created by Vemon.
