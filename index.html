@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D207 Lore</title>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #file-list {
+            margin-bottom: 20px;
+        }
+        #content {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Obsidian Vault Viewer</h1>
+    <div id="file-list">
+        <h2>Files</h2>
+        <ul id="file-links">
+            <!-- Links to files will be dynamically generated here -->
+        </ul>
+    </div>
+    <div id="content">
+        <h2>File Content</h2>
+        <div id="markdown-content">Select a file to view its content.</div>
+    </div>
+
+    <script>
+        // List of Markdown files in your GitHub Pages repository
+        const files = [
+            "example1.md",
+            "example2.md",
+            "notes/section1.md"
+        ];
+
+        const vaultPath = "./"; // Base path to your GitHub Pages
+
+        // Dynamically list Markdown files
+        function listFiles() {
+            const fileLinks = document.getElementById('file-links');
+
+            files.forEach(file => {
+                const listItem = document.createElement('li');
+                const link = document.createElement('a');
+                link.textContent = file;
+                link.href = '#';
+                link.onclick = (e) => {
+                    e.preventDefault();
+                    loadFile(file);
+                };
+                listItem.appendChild(link);
+                fileLinks.appendChild(listItem);
+            });
+        }
+
+        // Load and render a Markdown file
+        async function loadFile(fileName) {
+            try {
+                const response = await fetch(`${vaultPath}${fileName}`);
+                if (!response.ok) {
+                    throw new Error(`Failed to fetch ${fileName}: ${response.statusText}`);
+                }
+                const markdown = await response.text();
+                const html = marked(markdown);
+                document.getElementById('markdown-content').innerHTML = html;
+            } catch (error) {
+                console.error('Error loading file:', error);
+                document.getElementById('markdown-content').innerHTML = `<p>Error loading file: ${fileName}</p>`;
+            }
+        }
+
+        // Initialize
+        listFiles();
+    </script>
+</body>
+</html>
