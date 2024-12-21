@@ -1,9 +1,10 @@
 
 
 some text here
+{% comment %}
 
 {% include_relative D207-Lore/Welcome.md %}
-
+{% endcomment %}
 
 ### Heading 3
 
