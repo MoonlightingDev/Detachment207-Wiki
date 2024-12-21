@@ -1,4 +1,4 @@
-
+Created by [[Candyman]]
 
 In a stunning display of valor and determination, the valiant soldiers of 207 delivered a crushing blow to Ion Corp's operations in the region during the fourth mission of Operation Oiled Mustache. Spearheaded by Reaper Assault, the armored units of Ion Corp found their fuel reserves drained by the strategic maneuvers of 207 forces. Meanwhile, Alpha and Bravo squads engaged in fierce urban combat, bravely fighting street-to-street to liberate the city from Ion Corp's oppressive grip. Despite the enemy's ruthless tactics, 207 succeeded in clearing the town without a single civilian casualty, demonstrating their unwavering commitment to protecting innocent lives.
 

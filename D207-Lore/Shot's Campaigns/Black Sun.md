@@ -1,4 +1,4 @@
-Created by Shot
+Created by [[Shot]]
 
 ----------------------
 
