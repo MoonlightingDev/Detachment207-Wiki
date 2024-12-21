@@ -2,11 +2,11 @@
 
 some text here
 
-{% include_relative Welcome.md %}
+{% include_relative D207-Lore/Welcome.md %}
 
 
 ### Heading 3
 
 #### Heading 4
 
-{% include_relative 'Mission Makers.md' %}
+{% include_relative 'D207-Lore/Mission Makers.md' %}
